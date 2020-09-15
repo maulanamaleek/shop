@@ -1,0 +1,39 @@
+$primary: #5dd9c0;
+$primary-dark: #319984;
+$white: #eee;
+
+// Media queries
+
+$media-md: 768px;
+$media-lg: 1024px;
+
+$shadow: 1px 1px 5px
+  rgba(
+    $color: #000000,
+    $alpha: 0.1,
+  );
+
+@mixin fullWH {
+  width: 100vw;
+  height: 100vh;
+}
+
+@mixin cardBorder {
+  border-radius: 15px;
+  border: 0;
+  margin: 10px;
+  box-shadow: 1px 1px 5px rgba($color: #000000, $alpha: 0.1);
+}
+
+@mixin card-size-sm {
+  width: 150px;
+  height: 200px;
+  padding: 10px 5px;
+}
+
+@mixin text-sm {
+  h1 {
+    font-size: 1.5rem;
+    color: #000000;
+  }
+}
