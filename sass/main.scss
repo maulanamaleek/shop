@@ -163,6 +163,10 @@ body {
   margin: auto;
   height: fit-content;
 
+  @media (min-width: $media-lg) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
   &::-webkit-scrollbar {
     display: hidden;
   }
@@ -170,6 +174,9 @@ body {
   .card {
     @include card-size-sm;
 
+    @media (min-width: $media-lg) {
+      @include card-size-lg;
+    }
     .card-img-top {
       max-width: 100px;
       max-height: 100px;

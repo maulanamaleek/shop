@@ -206,6 +206,13 @@ body h1 {
   height: fit-content;
 }
 
+@media (min-width: 1024px) {
+  .product-wrap {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
+}
+
 .product-wrap::-webkit-scrollbar {
   display: hidden;
 }
@@ -214,6 +221,14 @@ body h1 {
   width: 150px;
   height: 200px;
   padding: 10px 5px;
+}
+
+@media (min-width: 1024px) {
+  .product-wrap .card {
+    width: 200px;
+    height: 250px;
+    padding: 10px 5px;
+  }
 }
 
 .product-wrap .card .card-img-top {
